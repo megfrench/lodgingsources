@@ -67,8 +67,17 @@
     </nav>
 
     <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 hero-pattern overflow-hidden">
-        <div class="absolute inset-0 bg-pantone-regatta/90"></div> <!-- Overlay for readability -->
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <!-- 1. Base solid color overlay to soften the dots slightly -->
+        <div class="absolute inset-0 bg-pantone-regatta/75"></div>
+        
+        <!-- 2. The Semi-Transparent Flag Image Overlay -->
+        <div class="absolute inset-0 bg-[url('https://raw.githubusercontent.com/megfrench/lodgingsources/main/Flag.png')] bg-cover bg-center opacity-20 mix-blend-overlay"></div>
+        
+        <!-- 3. Bottom gradient to ensure text readability -->
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-pantone-dark/40"></div>
+
+        <!-- 4. Content (with z-10 to stay above all the absolute background layers) -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="inline-block px-4 py-1.5 rounded-full bg-pantone-lemon/20 text-pantone-lemon font-semibold text-sm mb-6 border border-pantone-lemon/30 backdrop-blur-sm">
                 <i class="fa-solid fa-star text-xs mr-1"></i> WOSB Certified Prime Contractor
             </div>
@@ -82,7 +91,7 @@
                 <a href="#capabilities" class="bg-pantone-cloud text-pantone-regatta px-8 py-4 rounded-xl font-bold text-lg hover:bg-white transition-all shadow-xl hover:-translate-y-1">
                     <i class="fa-solid fa-file-contract mr-2"></i> View Capabilities
                 </a>
-                <a href="#vendor-network" class="bg-transparent border-2 border-pantone-nantucket text-pantone-nantucket px-8 py-4 rounded-xl font-bold text-lg hover:bg-pantone-nantucket hover:text-pantone-dark transition-all shadow-lg hover:-translate-y-1">
+                <a href="#vendor-network" class="bg-transparent border-2 border-pantone-nantucket text-pantone-nantucket px-8 py-4 rounded-xl font-bold text-lg hover:bg-pantone-nantucket hover:text-pantone-dark transition-all shadow-lg hover:-translate-y-1 backdrop-blur-sm">
                     <i class="fa-solid fa-handshake mr-2"></i> Join Vendor Network
                 </a>
             </div>
@@ -266,7 +275,7 @@
                     <h4 class="text-lg font-semibold text-white mb-4 border-b border-pantone-nimbus/30 pb-2">Contact</h4>
                     <ul class="space-y-3 text-sm text-pantone-cloud/80">
                         <li><i class="fa-solid fa-location-dot mr-2 text-pantone-lemon"></i> Chillicothe, OH</li>
-                        
+                       
                         <li><i class="fa-solid fa-envelope mr-2 text-pantone-lemon"></i> admin@lodgingsources.com</li>
                     </ul>
                 </div>
@@ -294,7 +303,7 @@
                         <div class="col-span-2 mt-4">
                             <span class="block text-pantone-lemon font-medium text-xs uppercase tracking-wider mb-1">Product & Service Codes (PSCs)</span>
                             <div class="flex flex-wrap gap-2 mt-1">
-                              
+                                
                                 <span class="bg-white/10 border border-pantone-lemon/50 text-pantone-cloud px-2 py-1 rounded text-xs font-mono hover:bg-pantone-lemon/20 transition-colors" title="LEASE/RENTAL OF CONFERENCE SPACE AND FACILITIES">X1AB (Conf. Space)</span>
                                 <span class="bg-white/10 border border-pantone-lemon/50 text-pantone-cloud px-2 py-1 rounded text-xs font-mono hover:bg-pantone-lemon/20 transition-colors" title="LEASE/RENTAL OF OTHER ADMINISTRATIVE FACILITIES AND SERVICE BUILDINGS">X1AZ (Admin Facilities)</span>
                                 <span class="bg-white/10 border border-pantone-lemon/50 text-pantone-cloud px-2 py-1 rounded text-xs font-mono hover:bg-pantone-lemon/20 transition-colors" title="LEASE/RENTAL OF FAMILY HOUSING FACILITIES">X1FA (Family Housing)</span>
